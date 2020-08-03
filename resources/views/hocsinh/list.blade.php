@@ -40,7 +40,7 @@
 	<div class="col-xs-12 col-sm-12 col-md-12">
 		<div class="table-responsive">
 		<form method="get" action="/hocsinh/create">
-			<button type="submit">Thêm mới</button>
+			<button type="submit" class="btn btn-primary">Thêm mới</button>
 		</form>
 			<table id="DataList" class="table table-bordered table-hover">
 				<thead>
