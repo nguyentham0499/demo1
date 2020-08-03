@@ -4,7 +4,7 @@
 
 @section('content')
 
-<?php //Hiển thị thông báo thành công?>
+
 <div class="page-header"><h4>Quản lý học sinh</h4></div>
 
 @if ( Session::has('success') )
@@ -17,7 +17,7 @@
 	</div>
 @endif
 
-<?php //Hiển thị thông báo lỗi?>
+
 @if ( Session::has('error') )
 	<div class="alert alert-danger alert-dismissible" role="alert">
 		<strong>{{ Session::get('error') }}</strong>
@@ -28,7 +28,7 @@
 	</div>
 @endif
 
-<?php //Hiển thị danh sách học sinh?>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -53,7 +53,7 @@
 					</tr>
 				</thead>
 				<tbody>
-				<?php //Khởi tạo vòng lập foreach lấy giá vào bảng?>
+				<?php?>
 				@foreach($listhocsinh as $key => $hocsinh)
 					<tr>
                         <td>{{ $hocsinh->HS_MA }}</td>
@@ -62,7 +62,7 @@
 						<td>{{ $hocsinh->HS_SDT }}</td>
 						<td><a href="/hocsinh/{{ $hocsinh->HS_MA }}/edit" class="btn btn-custon-rounded-three btn-warning">Sửa</a>|<a href="/hocsinh/{{ $hocsinh->HS_MA }}/delete" class="btn btn-custon-rounded-three btn-danger">Xóa</a></td>
 					</tr>
-				<?php //Kết thúc vòng lập foreach?>
+				<?php?>
 				@endforeach
 				</tbody>
 			</table>

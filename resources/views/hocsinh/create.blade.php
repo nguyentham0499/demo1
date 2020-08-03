@@ -4,7 +4,7 @@
 
 @section('content')
 
-<?php //Hiển thị thông báo thành công?>
+
 @if ( Session::has('success') )
 	<div class="alert alert-success alert-dismissible" role="alert">
 		<strong>{{ Session::get('success') }}</strong>
@@ -15,8 +15,8 @@
 	</div>
 @endif
 
-<?php //Hiển thị thông báo lỗi?>
-@if ( Session::has('error') )
+
+ @if ( Session::has('error') )
 	<div class="alert alert-danger alert-dismissible" role="alert">
 		<strong>{{ Session::get('error') }}</strong>
 		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -24,9 +24,9 @@
 			<span class="sr-only">Close</span>
 		</button>
 	</div>
-@endif
+@endif 
 
-<?php //Form thêm mới học sinh?>
+<?php?>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -55,10 +55,7 @@
 			<label for="HS_SDT">Số điện thoại</label>
 			<input type="text" class="form-control" id="HS_SDT"  name="HS_SDT" placeholder="Số điện thoại" maxlength="15" required />
 		</div>		
-		<form method="get" action="/hocsinh" style="text-align: left;">
-			<button type="submit" cclass="btn btn-custon-rounded-three btn-success">Về danh sách</button>
-			<button type="submit" class="btn btn-primary">Thêm</button>
-		</form>
+			<center><button type="submit" class="btn btn-primary">Thêm</button></center>
 	</form>
 </div>
 @endsection

@@ -16,9 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('hocsinh', 'HocsinhController@index'); // Hiển thị danh sách học sinh
-Route::get('hocsinh/create', 'HocsinhController@create'); // Thêm mới học sinh
-Route::post('hocsinh/create', 'HocsinhController@store'); // Xử lý thêm mới học sinh
-Route::get('hocsinh/{id}/edit', 'HocsinhController@edit'); // Sửa học sinh
-Route::post('hocsinh/update', 'HocsinhController@update'); // Xử lý sửa học sinh
-Route::get('hocsinh/{id}/delete', 'HocsinhController@destroy'); // Xóa học sinh
+Route::get('hocsinh', 'HocsinhController@index'); 
+Route::get('hocsinh/create', 'HocsinhController@create');
+Route::post('hocsinh/create', 'HocsinhController@store'); 
+Route::get('hocsinh/{id}/edit', 'HocsinhController@edit'); 
+Route::post('hocsinh/update', 'HocsinhController@update'); 
+Route::get('hocsinh/{id}/delete', 'HocsinhController@destroy');

@@ -5,7 +5,7 @@
 @section('content')
 
 
-<?php //Hiển thị thông báo thành công?>
+
 @if ( Session::has('success') )
 	<div class="alert alert-success alert-dismissible" role="alert">
 		<strong>{{ Session::get('success') }}</strong>
@@ -16,7 +16,6 @@
 	</div>
 @endif
 
-<?php //Hiển thị thông báo lỗi?>
 @if ( Session::has('error') )
 	<div class="alert alert-danger alert-dismissible" role="alert">
 		<strong>{{ Session::get('error') }}</strong>
@@ -27,7 +26,7 @@
 	</div>
 @endif
 
-<?php //Hiển thị form sửa học sinh?>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
